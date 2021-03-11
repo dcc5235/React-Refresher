@@ -1,8 +1,8 @@
-# React Refresher Notes
+# React Refresher Notes/Cheat Sheet
 
-Developed by Facebook to upgrade codebases/architecture (there was a need for it as websites became more complex and bugs became more prevalent in code). React was released to the developer community in 2013.
+Developed by Facebook to upgrade codebases/architecture (there was a need for it as websites became more complex and bugs became more prevalent in code). React was released to the developer community in 2013. React.js is a library.
 
-<details><summary>Highlights</summary>
+<details><summary>Highlights of React</summary>
   
 #### DOM Manipulation
 
@@ -10,14 +10,22 @@ The DOM (Document Object Model) is used to display websites through JavaScript (
 
 #### Component Architecture
 
-React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML.
+React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML but is called JSX.
 
 #### Data Flow
+
+React follows a unilateral data flow from top to bottom. It creates a virtual DOM that is a treelike object which gives React the ability to look at the blueprint of what needs to be built and modifies the DOM for us. Any time the state (data) changes, React intercepts that and updates the DOM as needed.
 
 #### Library
 
 </details>
 <details><summary>Next Topic</summary>
 
+#### 
+</details>
 
+</details>
+<details><summary>Next Topic</summary>
+
+#### 
 </details>
