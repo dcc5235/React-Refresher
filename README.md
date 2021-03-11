@@ -10,6 +10,7 @@ The DOM (Document Object Model) is used to display websites through JavaScript (
 
 #### Component Architecture
 
+React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML.
 
 #### Data Flow
 
