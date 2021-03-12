@@ -10,7 +10,7 @@ The DOM (Document Object Model) is used to display websites through JavaScript (
 
 #### 2. Component Architecture
 
-React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML but is called JSX.
+React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML called JSX. 
 
 #### 3. Data Flow
 
@@ -61,6 +61,23 @@ class App extends Component {
 ```
 
 Keep in mind that since React follows unilateral data flow, when the state changes, it re-renders the component to display the change.
+</details>
+
+<details><summary>Functional Components</summary>
+
+#### 
+components take in props (parameters that are passed into the component and come out as objects)
+children are anything in between tags <div> {props.child} </div>
+
+</details>
+
+<details><summary>Life Cycle Methods</summary>
+
+methods that get called at diff stages of when built in react components gets rendered
+#### componentDidMount
+
+mount - react puts component on the page (renders) and when it does that, it calls the block of code inside the func
+note: back ticks are called string interpolation
 </details>
 
 <details><summary>Next Topic</summary>
