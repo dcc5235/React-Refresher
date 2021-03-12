@@ -36,6 +36,7 @@ class App extends Component {
 ```
 By using class, there is now access to state. <strong>State</strong> is an object with properties that can be accessed at any point inside class. To access state, call a constructor. This allows us to use this state as many times as possible. 
 
+##### Access State with Class
 ```
 class App extends Component {
   constructor() {
