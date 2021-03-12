@@ -53,12 +53,21 @@ class App extends Component {
       // render the state from class
       <p>{this.state.name}</p>
       // when user clicks the button, the text above will change based on what is declared in state
+      // note that anything inside {} is a JS expression
       <button onClick={() => this.setState({ string: 'Different example' })}>Click me</button>
     )
   }
 }
 ```
+
+Keep in mind that since React follows unilateral data flow, when the state changes, it re-renders the component to display the change.
 </details>
+
+<details><summary>Next Topic</summary>
+
+#### 
+</details>
+
 <details><summary>Next Topic</summary>
 
 #### 
