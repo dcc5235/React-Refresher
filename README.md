@@ -20,11 +20,43 @@ React follows a <strong>unilateral</strong> data flow from top to bottom which m
 
 React only focuses on the <strong>UI (user-interface)</strong> which is why it is considered a <strong>library</strong> rather than a framework. Frameworks give developers all the tools necessary to build an application, whereas libraries provide the core of some functionality (React provides the UI). With React, other modules/libraries can be used to mix and match and customized as needed. React doesn't make assumptions on the tech stack being used, and so it also has cross-platform interactivity (e.g. React Native, React360).
 </details>
-<details><summary>Next Topic</summary>
+<details><summary>Class-based Components</summary>
 
-#### 
-</details>
+Both functions and classes can be written to return HTML. Class-based components in React have many functionality in them.
 
+##### General Syntax
+```
+class App extends Component {
+  render() {
+    return (
+    // any JSX (HTML-like syntax in React)
+    );
+  }
+}
+```
+By using class, there is now access to state. <strong>State</strong> is an object with properties that can be accessed at any point inside class. To access state, call a constructor. This allows us to use this state as many times as possible. 
+
+```
+class App extends Component {
+  constructor() {
+    super();
+    
+    this.state = {
+      // any form of state object
+      name: 'Example'
+    };
+  }
+
+  render() {
+    return (
+      // render the state from class
+      <p>{this.state.name}</p>
+      // when user clicks the button, the text above will change based on what is declared in state
+      <button onClick={() => this.setState({ string: 'Different example' })}>Click me</button>
+    )
+  }
+}
+```
 </details>
 <details><summary>Next Topic</summary>
 
