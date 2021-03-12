@@ -10,7 +10,7 @@ The DOM (Document Object Model) is used to display websites through JavaScript (
 
 #### 2. Component Architecture
 
-React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML called JSX. 
+React works heavily with reusable components that can be copied over to various areas on a page or even into other projects. Small components are built and added together to make larger ones. Components are created as JavaScript functions that receive a prop (attribute) and returns something that <em>looks like</em> HTML called JSX. Each component has one "job" and does it well.
 
 #### 3. Data Flow
 
@@ -65,19 +65,22 @@ Keep in mind that since React follows unilateral data flow, when the state chang
 
 <details><summary>Functional Components</summary>
 
-#### 
-components take in props (parameters that are passed into the component and come out as objects)
-children are anything in between tags <div> {props.child} </div>
+Components take in props (parameters that are passed into the component and come out as objects). Children are anything in between tags.
+
+```
+<div> {props.child} </div>
+```
+#### State vs Props
+Specific state lives in one location and trickles down as props. Props are pieces of data passed into a child component from the parent while state is data controlled within a component.
 
 </details>
 
 <details><summary>Life Cycle Methods</summary>
 
-methods that get called at diff stages of when built in react components gets rendered
+Life cycle methods get called at different stages of when built-in React components gets rendered.
 #### componentDidMount
+In this life cycle method, React renders the component on the page and when it does that, it calls the block of code inside the function.
 
-mount - react puts component on the page (renders) and when it does that, it calls the block of code inside the func
-note: back ticks are called string interpolation
 </details>
 
 <details><summary>Next Topic</summary>
