@@ -107,10 +107,11 @@ Specific state lives in one location and trickles down as props. Props are piece
 <details><summary>Cheat Sheet Definitions</summary>
 
 #### [Life Cycle Methods](https://reactjs.org/docs/glossary.html#lifecycle-methods)
-Life cycle methods get called at different stages of when built-in React components gets rendered. In life cycle methods, React renders the component on the page and when it does that, it calls the block of code inside the function.
+Life cycle methods (used with classes) get called at different stages of when built-in React components gets rendered. In life cycle methods, React renders the component on the page and when it does that, it calls the block of code inside the function.
 
 #### [React Events](https://reactjs.org/docs/handling-events.html#:~:text=React%20events%20are%20named%20using%20camelCase%2C%20rather%20than,the%20HTML%3A%20%3Cbutton%20onclick%3D%22activateLasers%20%28%29%22%3E%20Activate%20Lasers%20%3C%2Fbutton%3E)
 React handles changes through the DOM for you at the most optimal time to update the DOM. Event handlers occur through JSX as synthetic events (identified by its camelCasing rather than lowercase). With JSX, you pass a function as the event handler rather than a string. React intercepts the event handler and looks for what it needs to do next. 
 
-#### 
+#### [Asynchronous setState](https://reactjs.org/docs/faq-state.html#what-does-setstate-do)
+setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering. setState is asynchronous inside event handlers. This ensures that if both Parent and Child call setState during a click event, Child isn’t re-rendered twice. Instead, React “flushes” the state updates at the end of the browser event. This results in significant performance improvements in larger apps. This is an implementation detail, so avoid relying on it directly.
 </details>
