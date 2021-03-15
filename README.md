@@ -89,23 +89,28 @@ Specific state lives in one location and trickles down as props. Props are piece
 ![](https://www.techdiagonal.com/wp-content/uploads/2019/09/react-props-blog-image-design-2.jpg)
 </details>
 
-<details><summary>Life Cycle Methods</summary>
+<details><summary>Next Topic</summary>
 
+#### 
+</details>
+
+<details><summary>Next Topic</summary>
+
+#### 
+</details>
+
+<details><summary>Next Topic</summary>
+
+#### 
+</details>
+
+<details><summary>Cheat Sheet Definitions</summary>
+
+#### [Life Cycle Methods](https://reactjs.org/docs/glossary.html#lifecycle-methods)
 Life cycle methods get called at different stages of when built-in React components gets rendered. In life cycle methods, React renders the component on the page and when it does that, it calls the block of code inside the function.
 
-</details>
-
-<details><summary>Next Topic</summary>
-
-#### 
-</details>
-
-<details><summary>Next Topic</summary>
-
-#### 
-</details>
-
-<details><summary>Next Topic</summary>
+#### [React Events](https://reactjs.org/docs/handling-events.html#:~:text=React%20events%20are%20named%20using%20camelCase%2C%20rather%20than,the%20HTML%3A%20%3Cbutton%20onclick%3D%22activateLasers%20%28%29%22%3E%20Activate%20Lasers%20%3C%2Fbutton%3E)
+React handles changes through the DOM for you at the most optimal time to update the DOM. Event handlers occur through JSX as synthetic events (identified by its camelCasing rather than lowercase). With JSX, you pass a function as the event handler rather than a string. React intercepts the event handler and looks for what it needs to do next. 
 
 #### 
 </details>
