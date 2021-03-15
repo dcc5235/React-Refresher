@@ -65,14 +65,28 @@ Keep in mind that since React follows unilateral data flow, when the state chang
 
 <details><summary>Functional Components</summary>
 
-Components take in props (parameters that are passed into the component and come out as objects). Children are anything in between tags.
+Functional components are simply JavaScript functions. 
+
+##### General Syntax
+```
+function App() {
+  return (
+    <div>
+      <p>Hi</p>
+    </div>
+  );
+}
+```
+
+Components take in props (properties that are passed into the component and come out as objects). Children are anything in between tags.
 
 ```
 <div> {props.child} </div>
 ```
 #### State vs Props
-Specific state lives in one location and trickles down as props. Props are pieces of data passed into a child component from the parent while state is data controlled within a component.
+Specific state lives in one location and trickles down as props. Props are pieces of data passed into a child component from the parent while state is data controlled within a component. This is why state is mutable while props are immutable.
 
+![](https://www.techdiagonal.com/wp-content/uploads/2019/09/react-props-blog-image-design-2.jpg)
 </details>
 
 <details><summary>Life Cycle Methods</summary>
