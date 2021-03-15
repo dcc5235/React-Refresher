@@ -91,9 +91,7 @@ Specific state lives in one location and trickles down as props. Props are piece
 
 <details><summary>Life Cycle Methods</summary>
 
-Life cycle methods get called at different stages of when built-in React components gets rendered.
-#### componentDidMount
-In this life cycle method, React renders the component on the page and when it does that, it calls the block of code inside the function.
+Life cycle methods get called at different stages of when built-in React components gets rendered. In life cycle methods, React renders the component on the page and when it does that, it calls the block of code inside the function.
 
 </details>
 
