@@ -91,9 +91,13 @@ Specific state lives in one location and trickles down as props. Props are piece
 
 <details><summary>Life Cycle Methods</summary>
   
-Various life cycle methods serve different purposes and are triggered at different times in a component's lifecycle.
+Various life cycle methods serve different purposes and are triggered at different times in a component's lifecycle. See diagram [here](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/). 
 
 #### Mounting
+##### componentDidMount(): constructor → render → DOM & refs updates → componentDidMount
+This is the phase when components are put on the DOM for the first time (inserted into the tree). Before a life cycle method is called, React first calls the constructor which is where the super()(a method on the class inside the constructor) is located. The super() will pull in all methods and functionality from whatever it is extending (allows class component to have access to all other life cycle components. Inside the constructor, when this.state is called, state is initialized on the class (helpful for other life cycle components that may need state).
+
+After the state is called, the render method is called. The component tells JavaScript what to display as HTML. Any prop values are evaluated in the HTML at this point, too. Then, React updates the DOM and the component is mounted as a base class component. Finally, the componentDidMount() is called which is when we do things like API calls.
 
 #### Updating
 
