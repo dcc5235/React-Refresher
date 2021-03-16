@@ -100,8 +100,11 @@ This is the phase when components are put on the DOM for the first time (inserte
 After the state is called, the render method is called. The component tells JavaScript what to display as HTML. Any prop values are evaluated in the HTML at this point, too. Then, React updates the DOM and the component is mounted as a base class component. Finally, the componentDidMount() is called which is when we do things like API calls.
 
 #### Updating
+##### componentDidUpdate(): New props, setState(), forceUpdate() → render → DOM & refs updates → componentDidUpdate
+Any future updates to the props, state, or manual force update on the component will cause the component to go into the updating phase without the need to remount anything. This is because no new elements are needed. Instead, React efficiently makes selective changes to pieces of HTML in the component. Then, React updates the DOM. Finally, componentDidUpdate() gets called. This is used as an opportunity to operate on the DOM (e.g. network requests).
 
 #### Unmounting
+##### componentWillUnmount(): componentWillUnmount
 </details>
 
 <details><summary>Next Topic</summary>
