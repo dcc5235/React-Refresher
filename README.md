@@ -89,9 +89,15 @@ Specific state lives in one location and trickles down as props. Props are piece
 ![](https://www.techdiagonal.com/wp-content/uploads/2019/09/react-props-blog-image-design-2.jpg)
 </details>
 
-<details><summary>Next Topic</summary>
+<details><summary>Life Cycle Methods</summary>
+  
+Various life cycle methods serve different purposes and are triggered at different times in a component's lifecycle.
 
-#### 
+#### Mounting
+
+#### Updating
+
+#### Unmounting
 </details>
 
 <details><summary>Next Topic</summary>
@@ -113,5 +119,5 @@ Life cycle methods (used with classes) get called at different stages of when bu
 React handles changes through the DOM for you at the most optimal time to update the DOM. Event handlers occur through JSX as synthetic events (identified by its camelCasing rather than lowercase). With JSX, you pass a function as the event handler rather than a string. React intercepts the event handler and looks for what it needs to do next. 
 
 #### [Asynchronous setState](https://reactjs.org/docs/faq-state.html#what-does-setstate-do)
-setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering. setState is asynchronous inside event handlers. This ensures that if both Parent and Child call setState during a click event, Child isn’t re-rendered twice. Instead, React “flushes” the state updates at the end of the browser event. This results in significant performance improvements in larger apps. This is an implementation detail, so avoid relying on it directly.
+setState() schedules an update to a component’s state object (batches multiple setState()). When state changes, the component responds by re-rendering. setState is asynchronous inside event handlers. This ensures that if both Parent and Child call setState during a click event, Child isn’t re-rendered twice. Instead, React “flushes” the state updates at the end of the browser event. This results in significant performance improvements in larger apps. This is an implementation detail, so avoid relying on it directly.
 </details>
