@@ -97,14 +97,55 @@ Various life cycle methods serve different purposes and are triggered at differe
 ##### componentDidMount(): constructor → render → DOM & refs updates → componentDidMount
 This is the phase when components are put on the DOM for the first time (inserted into the tree). Before a life cycle method is called, React first calls the constructor which is where the super()(a method on the class inside the constructor) is located. The super() will pull in all methods and functionality from whatever it is extending (allows class component to have access to all other life cycle components. Inside the constructor, when this.state is called, state is initialized on the class (helpful for other life cycle components that may need state).
 
+```
+class componentName extends React.Component {
+  constructor() {
+    super();
+  }
+  // components here
+}
+```
+
 After the state is called, the render method is called. The component tells JavaScript what to display as HTML. Any prop values are evaluated in the HTML at this point, too. Then, React updates the DOM and the component is mounted as a base class component. Finally, the componentDidMount() is called which is when we do things like API calls.
+
+```
+componentDidMount() {
+  
+}
+```
 
 #### Updating
 ##### componentDidUpdate(): New props, setState(), forceUpdate() → render → DOM & refs updates → componentDidUpdate
-Any future updates to the props, state, or manual force update on the component will cause the component to go into the updating phase without the need to remount anything. This is because no new elements are needed. Instead, React efficiently makes selective changes to pieces of HTML in the component. Then, React updates the DOM. Finally, componentDidUpdate() gets called. This is used as an opportunity to operate on the DOM (e.g. network requests).
+Any future updates to the props, state, or manual force update on the component will cause the component to go into the updating phase without the need to remount anything. This is because no new elements are needed. Instead, React efficiently makes selective changes to pieces of HTML in the component. Then, React updates the DOM with required changes. Finally, componentDidUpdate() gets called. This is used as an opportunity to operate on the DOM (e.g. network requests).
+
+```
+componentDidUpdate() {
+  
+}
+```
+
+##### shouldComponentUpdate(): New props, setState(), forceUpdate() → shouldComponentUpdate → render → DOM & refs updates → componentDidUpdate
+This determines whether or not an entire chain of updates need to occur and exists between first part of the phase and render phase. React gets the nextProps and nextState and based on these props/states, it determines whether or not the DOM should be re-rendered. If it returns true, then the DOM will render and the component will update. If it returns false, React won't go through any additional phases of the life cycle method.
+
+This a fundamental part of performance optimization of the application and when we should do what with our components. 
+
+```
+shouldComponentUpdate(nextProps, nextState) {
+  // if you want re-render
+  return true;
+  // if you do not want re-render
+  return false;
+  // if you want to manual force compare if the text is the same between props
+  return nextProps.text !== this.props.text;
+}
+```
 
 #### Unmounting
 ##### componentWillUnmount(): componentWillUnmount
+
+```
+
+```
 </details>
 
 <details><summary>Next Topic</summary>
