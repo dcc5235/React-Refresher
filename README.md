@@ -142,9 +142,12 @@ shouldComponentUpdate(nextProps, nextState) {
 
 #### Unmounting
 ##### componentWillUnmount(): componentWillUnmount
+The component will unmount when it gets called and this life cycle method provides an opportunity for us to do anything before React strips the component off the DOM. This occurs when any re-rendering happens so that React can unmount anything that is no longer being used. Hency why it will no longer exist in the DOM. Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in componentDidMount().
 
 ```
-
+componentWillUnmount() {
+  
+}
 ```
 </details>
 
