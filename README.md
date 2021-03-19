@@ -152,11 +152,9 @@ componentWillUnmount() {
 </details>
 
 <details><summary>React Router DOM</summary>
-React builds a Single Page Application (SPA) where a web app loads a single page and dynamically updates that page as the user interacts with it. React allows us to pick and choose our own routing for SPA. Routing is the ability to move between different parts of an application when a user enters a URL or clicks an element (link, button, icon, image etc) within the application. React allows you to choose your own router, but one of the most popular variants is <em>react-router-dom</em>.
+React builds a Single Page Application (SPA) where a web app loads a single page and dynamically updates that page as the user interacts with it. React allows us to pick and choose our own routing for SPA. Routing is the ability to move between different parts of an application when a user enters a URL or clicks an element (link, button, icon, image etc) within the application. React allows you to choose your own router, but one of the most popular variants is <em>react-router-dom</em>.<br>
   
-```
-react-router-dom: a variant of the core library meant to be used for web applications, especially for those that have several pages that need to be rendered.
-```
+<strong>react-router-dom: a variant of the core library meant to be used for web applications, especially for those that have several pages that need to be rendered.</strong>
 
 The react-router package includes a number of routers that we can take advantage of depending on the platform we are targeting. These include <strong>BrowserRouter</strong>, <strong>HashRouter</strong>, and <strong>MemoryRouter</strong>. Its imports used for routing essentially look for changes in the state and render a whole new component on a completely different URL with efficiency without reloading.
 
