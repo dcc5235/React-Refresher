@@ -151,9 +151,34 @@ componentWillUnmount() {
 ```
 </details>
 
-<details><summary>Next Topic</summary>
+<details><summary>React Router DOM</summary>
+React builds a Single Page Application (SPA) where a web app locads a single page and dynamically updates that page as the user interacts with it. Routing is the ability to move between different parts of an application when a user enters a URL or clicks an element (link, button, icon, image etc) within the application. React allows you to choose your own router, but one of the most popular variants is <em>react-router-dom</em>.
+  
+```
+react-router-dom: a variant of the core library meant to be used for web applications
+```
 
-#### 
+The react-router package includes a number of routers that we can take advantage of depending on the platform we are targeting. These include <strong>BrowserRouter</strong>, <strong>HashRouter</strong>, and <strong>MemoryRouter</strong>. Its imports used for routing essentially look for changes in the state and render a whole new component on a completely different URL with efficiency without reloading.
+
+#### The BrowserRouter is used for applications which have a dynamic server that knows how to handle any type of URL whereas the HashRouter is used for static websites with a server that only responds to requests for files that it knows about.
+
+### History
+Each router creates a history object that it uses to keep track of the current location and re-renders the application whenever this location changes. For this reason, the other React Router components rely on this history object being present; which is why they need to be rendered inside a router.
+The BrowserRouter uses the HTML5 history API to keep the user interface in sync with the URL in the browser address bar.
+
+### Routes
+The <Route/> component renders the appropriate user interface when the current location matches the route’s path. The path is a prop on the <Route/> component that describes the pathname that the route should match.
+
+### Switch
+The react-router library also contains a <Switch/> component that is used to wrap multiple <Route/> components. The Switch component only picks the first matching route among all its children routes.
+
+![](https://miro.medium.com/max/500/1*nfOoDEzgO6Gf_X8o-D8MAw.png)
+
+Read more [here](https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e).
+</details>
+
+<details><summary>Higher Order Component</summary>
+
 </details>
 
 <details><summary>Next Topic</summary>
