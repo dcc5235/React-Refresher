@@ -201,4 +201,12 @@ React handles changes through the DOM for you at the most optimal time to update
 
 #### [Asynchronous setState](https://reactjs.org/docs/faq-state.html#what-does-setstate-do)
 setState() schedules an update to a component’s state object (batches multiple setState()). When state changes, the component responds by re-rendering. setState is asynchronous inside event handlers. This ensures that if both Parent and Child call setState during a click event, Child isn’t re-rendered twice. Instead, React “flushes” the state updates at the end of the browser event. This results in significant performance improvements in larger apps. This is an implementation detail, so avoid relying on it directly.
+
+#### [Importing SVG](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
+```
+import { ReactComponent as Logo } from '...';
+
+```
+
+This is a specific syntax to React that renders an SVG instead of a filename. This is handy if you don't want to load SVG as a separate file. 
 </details>
