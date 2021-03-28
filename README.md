@@ -182,15 +182,6 @@ The react-router library also contains a <Switch/> component that is used to wra
 Read more [here](https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e).
 </details>
 
-<details><summary>Higher Order Component</summary>
-
-</details>
-
-<details><summary>Next Topic</summary>
-
-#### 
-</details>
-
 <details><summary>Cheat Sheet Definitions</summary>
 
 #### [Life Cycle Methods](https://reactjs.org/docs/glossary.html#lifecycle-methods)
